@@ -23,6 +23,7 @@ public class Transacao {
     private BigDecimal valor;
 
     @Basic(optional = false)
+    @Column(name = "data_transacao")
     private Date dataTransacao;
 
     public Long getIdTransacao() {

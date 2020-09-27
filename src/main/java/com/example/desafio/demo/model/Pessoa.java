@@ -18,7 +18,10 @@ public class Pessoa {
     private String nome;
 
     @Basic(optional = false)
+    @Column(name = "limite_saque_diario")
     private String cpf;
+
+    @Column(name = "data_nascimento")
     private Date dataNascimento;
 
     @OneToMany(mappedBy = "pessoa")

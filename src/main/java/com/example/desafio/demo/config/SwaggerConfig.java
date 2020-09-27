@@ -23,7 +23,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.example.desafio.demo")) //diretório raiz da aplicação
-                .paths(regex("/gestao.*")) //uri raiz da aplicação
+                .paths(regex("/desafio.*")) //uri raiz da aplicação
                 .build()
                 .apiInfo(metaInfo());
     }

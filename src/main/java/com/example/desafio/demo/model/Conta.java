@@ -19,17 +19,22 @@ public class Conta {
     @JoinColumn(name = "id_pessoa")
     private Pessoa pessoa;
 
+    @Basic(optional = false)
     private BigDecimal saldo;
 
+    @Basic(optional = false)
     @Column(name = "limite_saque_diario")
     private BigDecimal limiteSaqueDiario;
 
+    @Basic(optional = false)
     @Column(name = "flag_ativo")
     private boolean flagAtivo;
 
+    @Basic(optional = false)
     @Column(name = "tipo_conta")
     private Long tipoConta;
 
+    @Basic(optional = false)
     @Column(name = "data_criacao")
     private Date dataCriacao;
 

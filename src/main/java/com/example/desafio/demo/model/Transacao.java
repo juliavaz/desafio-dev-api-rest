@@ -16,9 +16,13 @@ public class Transacao {
 
     @ManyToOne
     @JoinColumn(name = "id_conta")
+    @Basic(optional = false)
     private Conta conta;
 
+    @Basic(optional = false)
     private BigDecimal valor;
+
+    @Basic(optional = false)
     private Date dataTransacao;
 
     public Long getIdTransacao() {

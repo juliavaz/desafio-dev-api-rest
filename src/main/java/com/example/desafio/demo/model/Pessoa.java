@@ -5,8 +5,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
-// atualizar o equals e hashCode
-
 @Entity
 @Table(name="tb_pessoa")
 public class Pessoa {
@@ -15,7 +13,11 @@ public class Pessoa {
     @Column(name = "id_pessoa")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @Basic(optional = false)
     private String nome;
+
+    @Basic(optional = false)
     private String cpf;
     private Date dataNascimento;
 

@@ -69,7 +69,7 @@ public class Conta {
         this.limiteSaqueDiario = limiteSaqueDiario;
     }
 
-    public boolean isFlagAtivo() {
+    public boolean getFlagAtivo() {
         return flagAtivo;
     }
 
